@@ -1,11 +1,7 @@
 body {
-    font-family: "Gill Sans", sans-serif;
-    background: rgb(193, 239, 243);
-    margin: 10px;
-    align: center;
-    margin: 100px;
-    color: blue;
-    font-size: 1.2em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background: rgb(211, 211, 211);
+    margin: 20px;
     }
     
     .Todo-Item:hover .trash-icon{
