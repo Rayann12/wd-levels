@@ -1,7 +1,9 @@
 body {
-    font-family: "Lucida Console", "Courier New", monospace;
-    background: rgb(211, 211, 211);
+    font-family: "Gill Sans", sans-serif;
+    background: rgb(74,74,74);
     margin: 20px;
+    color: blue;
+    font-size: 1.4eml;
     }
     
     .Todo-Item:hover .trash-icon{
