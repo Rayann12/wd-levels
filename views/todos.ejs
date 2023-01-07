@@ -52,7 +52,7 @@
             <a class="text-green-600" href="/signout">sign out</a>
             <form action="/todos" method="post">
                 <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
-                <div class="flex gap-2 py-4">
+                <div class="flex gap-2 py-6">
                     <div class="flex-auto">
                         <input type="text" name="title" placeholder="What's next?" class="border border-gray-300 text-gray-900 w-full rounded p-3 text-sm" required />
                     </div>
@@ -60,14 +60,14 @@
                         <input type="date" name="dueDate" class="border border-gray-300 text-gray-900 w-full rounded p-2 text-sm leading-4" />
                     </div>
                     <div class="flex-none">
-                        <button type="submit" id="bt" class="bg-green-600 text-white px-5 py-1.5 rounded mr-2 mb-2">Add Todo</button>
+                        <button type="submit" id="bt" class="bg-green-600 text-white px-6 py-2 rounded mr-2 mb-2">Add Todo</button>
                     </div>
                 </div>
             </form>
             <div>
                 <% if (messages && messages.error && messages.error.length > 0) { %>
                     <% for(var i=0; i<messages.error.length; i++) { %>
-                        <p class="bg-red-100 my-3 list-none rounded px-4 py-2"><%= messages.error[i] %></p>
+                        <p class="bg-red-100 my-4 list-none rounded px-5 py-3"><%= messages.error[i] %></p>
                     <% } %>
                 <% } %>
             </div>
