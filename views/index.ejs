@@ -57,14 +57,14 @@
         <form action="/todos" method="post">
           <input type="hidden" name="_csrf" value="<%= csrfToken %>">
            <!-- when our form gets submiited csrf token also gets submitted -->
-            <div class="flex gap-2 py-4" my-8>
-                <div class="flex-auto" my-2>
+            <div class="flex gap-2 py-4 my-8">
+                <div class="flex-auto my-2">
                     <input type="text" name="title" placeholder="What's next" class="border border-gray-300 rounded text-gray-900 w-full p-2 text-sm" required />
                 </div>
-            <div class="flex-auto" my-13>
+            <div class="flex-auto my-13">
                 <input type="date" name="dueDate" class="border border-gray-300 rounded text-gray-900 w-full p-2 text-sm leading-4 " required/>
             </div>
-            <div class="flex-none" my-19>
+            <div class="flex-none my-19">
                 <button type="submit" class="bg-green-600 text-white px-5 py-1.5 rounded font-medium mr-2 mb-2">Add</button>
             </div>  
             </div>
